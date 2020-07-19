@@ -1,7 +1,7 @@
 {
-  "name": "template",
+  "name": "set",
   "version": "1.0.0",
-  "description": "",
+  "description": "Игрок может выбирать персонажей в команду на конкретный раунд исходя из их текущего состояния, уровня и стратегии игры. Нам необходимо не позволять ему добавлять в команду несколько раз одного и того же персонажа.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -31,5 +31,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evgeniy-27/set.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Evgeniy-27/set/issues"
+  },
+  "homepage": "https://github.com/Evgeniy-27/set#readme"
 }
