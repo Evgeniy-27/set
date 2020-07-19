@@ -1,14 +1,37 @@
 import Team from '../team';
-import Character from '../character';
 
 const team = new Team();
 
-const player1 = new Character({ name: 'Vasiy', status: 11 });
-const player2 = new Character({ name: 'Petiy', status: 22 });
-const player3 = new Character({ name: 'Sveta', status: 33 });
+const bowman = {
+    name: 'Лучник',
+    type: 'Bowman',
+    attack: 25,
+    defance: 25
+};
+
+const swordsman = {
+    name: 'Фектовальщик',
+    type: 'Swordsman',
+    attack: 25,
+    defance: 25
+};
+
+const magician = {
+    name: 'Маг',
+    type: 'Magician',
+    attack: 25,
+    defance: 25
+};
 
 test('Добавление персонажа в команду', () => {
-    expect(team.add(player1)).toEqual()
+    expect(team.add(bowman)).toStrictEqual({membors: [
+        {value: {
+                name: 'Лучник',
+                type: 'Bowman',
+                attack: 25,
+                defance: 25
+                }
+        }
+    ]});
 });
-
 
